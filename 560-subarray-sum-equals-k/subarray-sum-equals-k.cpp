@@ -5,8 +5,8 @@ public:
         table[0]=1;
         int prefixsum=0;
         int count=0;
-        for(int num:nums){
-            prefixsum+=num;
+        for(int i=0;i<nums.size();i++){
+            prefixsum+=nums[i];
             if(table.count(prefixsum-k)){
                 count+=table[prefixsum-k];
             }
